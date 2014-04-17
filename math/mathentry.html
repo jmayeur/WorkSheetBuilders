@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Math Entry</title>
+    <link rel="stylesheet" type="text/css" href="mathentry.css">
+</head>
+<body>
+<template id="problemTemplate">
+    <fieldset>
+        <legend>Problem #</legend>
+        <label for="template_top">
+            <input id="template_top" size="4" maxlength="4" max="999" min="-999" type="text" oninvalid="Enter a number between -999 and 999">
+            <span>Top Number</span>
+        </label>
+        <br/>
+        <label for="template_bottom">
+            <input id="template_bottom" size="4" maxlength="4" max="999" min="-999" type="text" oninvalid="Enter a number between -999 and 999">
+            <span>Bottom Number</span>
+        </label>
+        <br/>
+        <label for="template_opertator" tabindex="-1">
+            <select id="template_opertator">
+                <option value="&#43;">&#43;</option>
+                <option value="&minus;">&minus;</option>
+                <option value="&divide;">&divide;</option>
+                <option value="&times;">&times;</option>
+            </select>
+            <span>Operator</span>
+        </label>
+
+    </fieldset>
+</template>
+<form onsubmit="return false;" id="dummyform"></form>
+<form method="get" action="mathsheet.html" id="dataForm">
+    <input type="hidden" name="problemData" id="problemDataBucket">
+    <input type="button" value="make worksheet" onclick="templateMaker.captureDataAndSubmit()" >
+<script src="mathentry.js"></script>
+</form>
+<script>
+    templateMaker.init(document.querySelector('#problemTemplate'), document.querySelector('#dummyform'));
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Word Entry</title>
+    <link rel="stylesheet" type="text/css" href="wordentry.css">
+    <script src="wordentry.js"></script>
+</head>
+<body>
+
+<form onsubmit="return false;" autocomplete="off">
+    <h3>Select layout</h3>
+    <label>
+        <input type="radio" value="4" name="columnSelect" onclick="templateMaker.setColumns(4)" checked="true">
+        <span>4 Column</span>
+    </label>
+    <label>
+        <input type="radio" value="3" name="columnSelect" onclick="templateMaker.setColumns(3)">
+        <span>3 Column</span>
+    </label>
+    <label>
+        <input type="radio" value="2" name="columnSelect" onclick="templateMaker.setColumns(2)">
+        <span>2 Column</span>
+    </label>
+    <label>
+        <input type="radio" value="1" name="columnSelect" onclick="templateMaker.setColumns(1)">
+        <span>1 Column</span>
+    </label>
+    <br/>
+    <br/>
+    <label for="wordlist">Enter up to <span id="maxWordCount">16</span>, separated by commas<span class="wordCount">&nbspCurrent word count: <span id="count">0</span></span></label><br/>
+    <textarea rows="4" cols="120" id="wordlist" name="words" onkeyup="templateMaker.keyUpHandler()" onkeydown="templateMaker.keyDownHandler()" autocomplete="off" value=""></textarea><br/>
+    <input type="button" value="make worksheet" onclick="templateMaker.captureDataAndSubmit()" >
+</form>
+<form method="get" action="wordsheet.html" id="backingForm">
+    <input type="hidden" name="wordData" id="wordDataBucket">
+</form>
+
+<div class="miniView">
+    <div class="miniWorkSheet" id="mockup"></div>
+</div>
+
+<template id="miniWordTemplate">
+    <div class="wordbox">
+        <span class="example"></span>
+        <div class="padding"></div>
+        <span class="workspace"></span>
+    </div>
+</template>
+</body>
+</html>

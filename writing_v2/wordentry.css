@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Handwriting";
+    src: url("../resources/fonts/KGPrimaryDots.ttf");
+}
+
+@font-face {
+    font-family: "Penmanship";
+    src: url("../resources/fonts/KGPrimaryDotsLined.ttf");
+}
+
+label {
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+label > span {
+    font-size: 16px;
+}
+
+h3{
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+.wordCount {
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: brown;
+    text-align: right;
+}
+
+input[type="button"] {
+    border: 1px solid darkblue;
+    text-decoration: none;
+    color: darkblue;
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+.miniView {
+    margin: 0;
+    width: 340px;
+    height: 496px;
+    border: 1px solid #000000;
+}
+
+.miniView, .miniWorkSheet {
+    padding: 0;
+
+}
+
+.miniWorkSheet {
+    width: 284px;
+    height: 324px;
+    margin: 36px 27px 36px 27px;
+    overflow: visible;
+}
+
+.wordbox {
+    margin: 2px;
+    padding: 12px 0;
+    height: 70px;
+    width: 64px;
+    background-color: #ffffff;
+    float: left;
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.example, .workspace {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Penmanship, Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.padding {
+    height: 15px;
+}

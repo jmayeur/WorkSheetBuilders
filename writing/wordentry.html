@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Word Entry</title>
+    <link rel="stylesheet" type="text/css" href="wordentry.css">
+    <script src="wordentry.js"></script>
+</head>
+<body>
+
+<form onsubmit="return false;" autocomplete="off">
+    <label for="wordlist">Enter up to 16 words with 6 letters each, separated by commas<span class="wordCount">&nbspCurrent word count: <span id="count">0</span></span></label><br/>
+    <textarea rows="4" cols="120" id="wordlist" name="words" onkeyup="templateMaker.keyUpHandler()" onkeydown="templateMaker.keyDownHandler()" autocomplete="off" value=""></textarea><br/>
+    <input type="button" value="make worksheet" onclick="templateMaker.captureDataAndSubmit()" >
+</form>
+<form method="get" action="wordsheet.html" id="backingForm">
+    <input type="hidden" name="wordData" id="wordDataBucket">
+</form>
+
+<div class="miniView">
+    <div class="miniWorkSheet" id="mockup"></div>
+</div>
+
+<template id="miniWordTemplate">
+    <div class="miniWordbox">
+        <span class="miniExample"></span>
+        <div class="padding"></div>
+        <span class="miniWorkspace"></span>
+    </div>
+</template>
+</body>
+</html>

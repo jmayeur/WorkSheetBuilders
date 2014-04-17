@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Handwriting";
+    src: url("../resources/fonts/KGPrimaryDots.ttf");
+}
+
+label > span {
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+input[type="text"] {
+    text-decoration: none;
+    color: darkblue;
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+select, select > option {
+    color: darkblue;
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+fieldset {
+    border: 1px solid green;
+    display: inline;
+    float: left;
+    width: 200px;
+    margin: 35px 5px 0 5px;
+    padding: 5px;
+}
+
+legend {
+    padding: 0.2em 0.5em;
+    border: 1px solid green;
+    color: green;
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: right;
+}
+
+form {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+input[type="button"] {
+    border: 1px solid darkblue;
+    text-decoration: none;
+    color: darkblue;
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}

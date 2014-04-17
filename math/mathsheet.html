@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Math Worksheet</title>
+    <link rel="stylesheet" type="text/css" href="mathsheet.css">
+</head>
+<body>
+<template id="mathProblemTemplate">
+    <div class="problem">
+        <div class="top"><span class="number"></span></div>
+        <div class="bottom"><span class="operator">+</span><span class="number"></span></div>
+        <hr class="divider">
+    </div>
+</template>
+<div class="worksheet" id="mathworksheet"></div>
+<script src="mathsheet.js"></script>
+<script>
+    var dataSet;
+    dataSet = templateManager.getRequestProblemList() || templateManager.getSimpleProblemDataSet(1, templateManager.SYMBOL.PLUS);
+    templateManager.init( dataSet, document.getElementById('mathworksheet'));
+</script>
+</body>
+</html>

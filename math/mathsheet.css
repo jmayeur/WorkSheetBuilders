@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Handwriting";
+    src: url("../resources/fonts/KGPrimaryDots.ttf");
+}
+
+body {
+    margin: 0;
+    width: 676px;
+    height: 792px;
+}
+
+body, .worksheet {
+    padding: 0;
+}
+
+.worksheet {
+    width: 568px;
+    height: 648px;
+    margin: 72px 54px 72px 54px;
+    overflow: visible;
+}
+
+.problem {
+    width: 120px;
+    height: 176px;
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: bolder;
+    float: left;
+    display: inline;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 5px;
+}
+
+.top, .bottom {
+    text-align: right;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+
+.divider {
+    margin: 0;
+    padding: 0;
+}
