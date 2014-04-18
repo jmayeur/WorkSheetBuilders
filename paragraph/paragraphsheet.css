@@ -7,6 +7,18 @@
     font-family: "Handwriting";
     src: url("../resources/fonts/KGPrimaryDots.ttf");
 }
+
+@font-face {
+    font-family: "Handwriting2";
+    src: url("../resources/fonts/TRACE___.TTF");
+}
+
+@font-face {
+    font-family: "Handwriting3";
+    src: url("../resources/fonts/PrintDashed_TT.ttf");
+}
+
+
 body {
     margin: 0;
     width: 676px;
@@ -20,9 +32,10 @@ body {
     margin: 72px 54px 72px 54px;
     overflow: visible;
     border: 1px solid darkblue;
-    font-size: 36pt;
+    /*font-size: 36pt;*/
+    font-size: 34pt;
     line-height: 40pt;
-    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    font-family: Handwriting3, Helvetica, Arial, sans-serif;
     text-align: left;
     white-space: pre-wrap;
     padding: 8px;
