@@ -22,15 +22,15 @@ templateMaker = function () {
                 wordCount: 16
             },
             THIRD: {
-                boxWidth: 85.33,
+                boxWidth: 87,
                 wordCount: 12
             },
             HALF: {
-                boxWidth: 128,
+                boxWidth: 135,
                 wordCount: 8
             },
             FULL: {
-                boxWidth: 256,
+                boxWidth: 284,
                 wordCount: 4
             }
 

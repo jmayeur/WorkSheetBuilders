@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Penmanship";
+    src: url("../resources/fonts/KGPrimaryDotsLined.ttf");
+}
+
+@font-face {
+    font-family: "Handwriting";
+    src: url("../resources/fonts/KGPrimaryDots.ttf");
+}
+body {
+    margin: 0;
+    width: 676px;
+    height: 792px;
+    padding: 0;
+}
+
+.worksheet {
+    width: 568px;
+    height: 648px;
+    margin: 72px 54px 72px 54px;
+    overflow: visible;
+    border: 1px solid darkblue;
+    font-size: 36pt;
+    line-height: 40pt;
+    font-family: Handwriting, Helvetica, Arial, sans-serif;
+    text-align: left;
+    white-space: pre-wrap;
+    padding: 8px;
+    z-index: 10;
+}
+
+.line{
+    width: 568px;
+    left: 64px;
+    border-top:1px solid rgba(98, 145, 207, 0.6);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+.dash{
+    width: 568px;
+    left: 64px;
+    border-top:1px dotted rgba(255, 24, 8, 0.6);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}

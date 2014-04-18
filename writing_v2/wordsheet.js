@@ -64,7 +64,7 @@ var templateManager = (function () {
             paddingDiv = box.querySelector('.padding');
             exampleSlot = box.querySelector('.example');
             workspaceSlot = box.querySelector('.workspace');
-            exampleSlot.innerText =  wordData.text;
+            exampleSlot.innerText =  wordData.text.replace(/\+/g, ' ');
             paddingDiv.style.height = (30 + ((36 - wordData.fontSize) * 2)) + 'px';
             exampleSlot.style.fontSize = wordData.fontSize + 'pt';
             workspaceSlot.style.fontSize = wordData.fontSize + 'pt';
@@ -73,7 +73,7 @@ var templateManager = (function () {
             parentEl.appendChild(clone);
 
             tries = 0;
-            while (workspaceSlot.offsetWidth < 90) {
+            while (workspaceSlot.offsetWidth < wordData.boxWidth) {
                 tries++;
                 workspaceSlot.innerHTML += '&nbsp;';
                 if (tries > 50) {
